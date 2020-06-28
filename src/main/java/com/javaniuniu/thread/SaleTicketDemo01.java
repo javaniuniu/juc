@@ -1,4 +1,4 @@
-package com.javaniuniu.demo01;
+package com.javaniuniu.thread;
 
 /**
  * @auther: javaniuniu
