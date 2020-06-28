@@ -973,7 +973,7 @@ public class MapTest {
 
 #### 7、Callable
 
-![image-20200628021434240](/Users/minp/GitHub/juc/image-20200628021434240.png)
+![image-20200628021434240](./image-20200628021434240.png)
 
 1. 可以有返回值
 2. 可以抛出一次
@@ -1038,7 +1038,7 @@ __细节__
 
 ##### 8、1 CountDownLatch
 
-![image-20200628104225554](/Users/minp/GitHub/juc/image-20200628104225554.png)
+![image-20200628104225554](./image-20200628104225554.png)
 
 ```java
 package com.javaniuniu.add;
@@ -1073,7 +1073,7 @@ __执行流程__
 
 ##### 8、2 CyclicBarrier
 
-![image-20200628104245308](/Users/minp/GitHub/juc/image-20200628104245308.png)
+![image-20200628104245308](./image-20200628104245308.png)
 
 ```java
 package com.javaniuniu.add;
@@ -1112,7 +1112,7 @@ public class CyclicBarrierDemo {
 
 ##### 8、3 Semaphore
 
-![image-20200628104303070](/Users/minp/GitHub/juc/image-20200628104303070.png)
+![image-20200628104303070](./image-20200628104303070.png)
 
 __举例，停车位 6辆车-3个停车位__
 
@@ -1158,7 +1158,7 @@ __作用：多个共享资源互斥使用，并发限流，控制最大的线程
 
 #### 9、读写锁
 
-![image-20200628105623096](/Users/minp/GitHub/juc/image-20200628105623096.png)
+![image-20200628105623096](./image-20200628105623096.png)
 
 ```java
 package com.javaniuniu.rw;
@@ -1264,7 +1264,7 @@ __取：如果队列是空的，必须阻塞等待生产__
 
 __BlockingQueue__
 
-<img src="/Users/minp/GitHub/juc/image-20200628115416392.png" alt="image-20200628123955703" style="zoom:50%;" />
+<img src="./image-20200628115416392.png" alt="image-20200628123955703" style="zoom:50%;" />
 
 什么情况下我们会使用：多线程，线程池
 
@@ -1450,7 +1450,7 @@ __线程池的好处：__
 
 > 线程 三大方法
 
-<img src="/Users/minp/GitHub/juc/image-20200628131032601.png" alt="image-20200628131032601" style="zoom:50%;" />
+<img src="./image-20200628131032601.png" alt="image-20200628131032601" style="zoom:50%;" />
 
 ```java
 package com.javaniuniu.pool;
@@ -1547,11 +1547,11 @@ public ThreadPoolExecutor(int corePoolSize, // 核心线程池大小
 
 > 四种拒绝策略
 
-![image-20200628131522351](/Users/minp/GitHub/juc/image-20200628131522351.png)
+![image-20200628131522351](./image-20200628131522351.png)
 
 
 
-<img src="/Users/minp/GitHub/juc/image-20200628130747536.png" alt="image-20200628130747536" style="zoom:50%;" />
+<img src="./image-20200628130747536.png" alt="image-20200628130747536" style="zoom:50%;" />
 
 ```java
 package com.javaniuniu.pool;
@@ -1856,7 +1856,7 @@ ForkJoin 在jdk1.7出来，并发执行任务，提高效率，大数据量
 
 大数据：Map Reduce （把大任务拆分为小任务）
 
-<img src="/Users/minp/GitHub/juc/image-20200628152929177.png" alt="image-20200628152929177" style="zoom:50%;" />
+<img src="./image-20200628152929177.png" alt="image-20200628152929177" style="zoom:50%;" />
 
 > ForkJoin 特点：工作窃取 （这个里面维护都是双端队列）
 >
@@ -1864,7 +1864,7 @@ ForkJoin 在jdk1.7出来，并发执行任务，提高效率，大数据量
 
 
 
-<img src="/Users/minp/GitHub/juc/image-20200628153157636.png" alt="image-20200628153157636" style="zoom:50%;" />
+<img src="./image-20200628153157636.png" alt="image-20200628153157636" style="zoom:50%;" />
 
 
 
@@ -2095,11 +2095,11 @@ __关于 JMM 的一些同步约定__
 
 jmm中有8种操作
 
-<img src="/Users/minp/GitHub/juc/image-20200628171238070.png" alt="image-20200628171238070" style="zoom:50%;"  />
+<img src="./image-20200628171238070.png" alt="image-20200628171238070" style="zoom:50%;"  />
 
 存在问题
 
-![image-20200628171520701](/Users/minp/GitHub/juc/image-20200628171520701.png)
+![image-20200628171520701](./image-20200628171520701.png)
 
 __内存交互操作有8种，虚拟机实现必须保证每一个操作都是原子的，不可在分的（对于double和long类型的变量来说，load、store、read和write操作在某些平台上允许例外）__
 
@@ -2137,7 +2137,7 @@ __内存交互操作有8种，虚拟机实现必须保证每一个操作都是�
 
 问题：程序不知道主内存中的值已经被修改
 
-![image-20200628172529426](/Users/minp/GitHub/juc/image-20200628172529426.png)
+![image-20200628172529426](./image-20200628172529426.png)
 
 
 
@@ -2317,7 +2317,7 @@ y = x + x; // 4
 
 2、保证某些变量的内存可见性（利用这些特性 保证了volatile 的可见性 ）
 
-<img src="/Users/minp/GitHub/juc/image-20200628190643095.png" alt="image-20200628190643095" style="zoom:50%;" />
+<img src="./image-20200628190643095.png" alt="image-20200628190643095" style="zoom:50%;" />
 
 
 
@@ -2628,9 +2628,9 @@ public class CasDemo {
 
 > Unsafe类
 
-<img src="/Users/minp/GitHub/juc/image-20200628231047142.png" alt="image-20200628231047142" style="zoom:50%;" />
+<img src="./image-20200628231047142.png" alt="image-20200628231047142" style="zoom:50%;" />
 
-<img src="/Users/minp/GitHub/juc/image-20200628231626614.png" alt="image-20200628231626614" style="zoom:50%;" />
+<img src="./image-20200628231626614.png" alt="image-20200628231626614" style="zoom:50%;" />
 
 
 
@@ -2646,7 +2646,7 @@ __缺点__
 
 > CAS ABA 问题
 
-![image-20200628233916247](/Users/minp/GitHub/juc/image-20200628233916247.png)
+![image-20200628233916247](./image-20200628233916247.png)
 
 ```java
 package com.javaniuniu.cas;
@@ -2766,7 +2766,7 @@ public ReentrantLock(boolean fair) { //在这个设置公平锁和非公平锁
 
 可重入锁也叫递归锁，且所有的锁都是可重入锁，
 
-<img src="/Users/minp/GitHub/juc/image-20200629002853986.png" alt="image-20200629002853986" style="zoom:50%;" />
+<img src="./image-20200629002853986.png" alt="image-20200629002853986" style="zoom:50%;" />
 
 > synchronized 版
 
@@ -2859,7 +2859,7 @@ class Phone2 {
 
 ##### 3、自旋锁
 
-<img src="/Users/minp/GitHub/juc/image-20200629004323287.png" alt="image-20200629004323287" style="zoom:50%;" />
+<img src="./image-20200629004323287.png" alt="image-20200629004323287" style="zoom:50%;" />
 
 ```jsva
 package com.javaniuniu.lock;
@@ -2933,7 +2933,7 @@ class TestSpinLock {
 
 死锁是什么
 
-<img src="/Users/minp/GitHub/juc/image-20200629010834325.png" alt="image-20200629010834325" style="zoom:50%;" />
+<img src="./image-20200629010834325.png" alt="image-20200629010834325" style="zoom:50%;" />
 
 死锁怎么判断
 
@@ -2988,17 +2988,17 @@ class MyThread implements Runnable{
 
 1、使用 `jps -l` 定位进程号
 
-<img src="/Users/minp/GitHub/juc/image-20200629012030698.png" alt="image-20200629012030698" style="zoom:50%;" />
+<img src="./image-20200629012030698.png" alt="image-20200629012030698" style="zoom:50%;" />
 
 2、使用 `jstack 进程号` 找到死锁问题
 
-![image-20200629012123700](/Users/minp/GitHub/juc/image-20200629012123700.png)
+![image-20200629012123700](./image-20200629012123700.png)
 
 排查问题：
 
 1、查看日志
 
-2、看堆栈
+2、看堆
 
 
 
